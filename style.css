@@ -1,0 +1,69 @@
+/* body {
+    background-image: url("img/background.jpg");
+} */
+
+/* .col-md-4 {} */
+
+img {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.219);
+}
+
+
+.move-up {
+    animation: moveUp 0.75s;
+}
+
+.move-down {
+    animation: moveDown 0.75s;
+}
+
+.result {
+    animation: result 3s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes moveUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes moveDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes result {
+
+    from {
+        opacity: 0;
+        transform: rotate(720deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+
+}
