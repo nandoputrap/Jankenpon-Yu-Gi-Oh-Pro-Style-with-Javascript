@@ -4,6 +4,19 @@
 
 /* .col-md-4 {} */
 
+body{
+    background: url("img/w85voqxm7me51.jpg");
+    background-size: cover;
+    font-family: 'Poppins',
+    sans-serif;
+    min-height: 100vh;
+}
+
+h1, p{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
 img {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -12,6 +25,14 @@ img:hover {
     box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.219);
 }
 
+.logo {
+    box-shadow: none;
+    height: 100px;
+}
+
+.logo:hover{
+    box-shadow: none;
+}
 
 .move-up {
     animation: moveUp 0.75s;
@@ -22,7 +43,7 @@ img:hover {
 }
 
 .result {
-    animation: result 3s;
+    animation: result 1s;
     transition-timing-function: ease-in;
 }
 
@@ -58,12 +79,12 @@ img:hover {
 
     from {
         opacity: 0;
-        transform: rotate(720deg);
+        transform: scale(0);
     }
 
     to {
         opacity: 1;
-        transform: rotate(0);
+        transform: scale(1);
     }
 
 }
